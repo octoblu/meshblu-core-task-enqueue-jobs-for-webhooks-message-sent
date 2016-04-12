@@ -1,9 +1,11 @@
 language: node_js
 node_js:
 - '5'
+services:
+- mongodb
 addons:
   code_climate:
-    repo_token: <REPO TOKEN GOES HERE>
+    repo_token: "e67fefce1583dc7aef81a42cc51c4fd1b79ed7b93c4f058fcef52f1a9966ab6f"
 before_script:
 - npm install -g codeclimate-test-reporter
 after_script:
